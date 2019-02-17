@@ -16,7 +16,7 @@ main{
 
 .left-part, .right-part{
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 .right-part{
     right: 0;
@@ -27,24 +27,31 @@ main{
     width: 100%;
     height: 100%;
 }
-.d-header div{
+.logo-position{
     width: 100%;
     height: 100vh;
     text-align: center;
+    position: relative;
 }
 .ep-logo{
-    top: 40%;
-    position: absolute;
-    display: inline-block;
     width: 300px;
-    z-index: 3;
-    margin-left: -150px;
 }
 
-#testDiv{
+.logo-container{
     position: absolute;
-    background: red;
-    height: 20vh;
-    top: 0px;
-    z-index: 5;
+    width: 300px;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    margin-top: -75px;
+    margin-left: -150px;
+}
+.logo-container h4{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.336);
+    padding: 0;
+    margin: 0;
+}
+.logo-container h4:nth-child(3){
+    text-align: right;
 }
