@@ -6,12 +6,36 @@ main{
     width: 100%;
 }
 
+
+
 .d-header{
     background: #bf8edf;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+.nav-cnt{
+    width: 100vw;
+    position: absolute;
+    z-index: 6;
+    text-align: center;
+}
+.navbar{
+    float: right;
+    margin-right: 100px;
+    opacity: 1;
+}
+.navbar a{
+    position: relative;
+    padding: 20px;
+    line-height: 90px;
+    text-decoration: none;
+    color: #f5c69b;
+}
+.navbar a:hover{
+    color: white;
+    transition: .3s;
 }
 
 .left-part, .right-part{
@@ -30,22 +54,19 @@ main{
 .logo-position{
     width: 100%;
     height: 100vh;
-    text-align: center;
     position: relative;
+    display: grid;
+    place-items: center;
 }
 .ep-logo{
     width: 300px;
 }
-
 .logo-container{
-    position: absolute;
     width: 300px;
+    position: absolute;
     z-index: 3;
-    left: 50%;
-    top: 50%;
-    margin-top: -75px;
-    margin-left: -150px;
 }
+
 .logo-container h4{
     text-align: left;
     color: rgba(255, 255, 255, 0.336);
@@ -54,4 +75,76 @@ main{
 }
 .logo-container h4:nth-child(3){
     text-align: right;
+}
+
+
+.illumin-lines{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    
+}
+.line-right{
+    position: absolute;
+    color: #fff;
+	/*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    */
+    background: linear-gradient(-45deg, #ff194b42 1%,#ff191959 33%,#ffe314 70%,#f8f192c4 100%);
+    background-size: 400% 400%;
+    opacity: .5;
+    
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+
+    width: 100%;
+    height: 100%;
+    /*-webkit-clip-path: polygon(0 63%, 59% 25%, 59% 0, 65% 0%, 65% 25%, 100% 63%, 100% 32%, 65% 32%, 65% 100%, 59% 100%, 59% 32%, 0 32%);
+    */
+    clip-path: polygon(0 63%, 65% 63%, 65% 0, 65.1% 0%, 65.1% 63%, 100% 63%, 100% 63.2%, 65.1% 63.2%, 65.1% 100%, 65% 100%, 65% 63.2%, 0 63.2%);
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+
+
+
+
+/*PORTFOLIO STARTS HERE*/
+.site1{
+    display: flex;
+    justify-content: center;
+}
+.site1-info{
+    margin-left: 20px;
+}
+.portfolio h2{
+    text-align: center;
+}
+
+footer{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #bf8edf;
+    color: white;
+    text-align: center;
+}
+footer img{
+    margin-right: 20px;
+}
+.footer-inner{
+    background-image: linear-gradient(225deg, #ff7b003d 0%, #2a0a5983 100%);
+    
 }
