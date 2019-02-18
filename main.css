@@ -154,6 +154,10 @@ footer img{
     background-image: linear-gradient(225deg, #ff7b003d 0%, #2a0a5983 100%);
     
 }
+.resume{
+    font-size: 13px;
+    color: white;
+}
 
 .menu-btn{
     display: none;
