@@ -179,8 +179,14 @@ footer img{
     .menu-btn{
         display: block;
         margin: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 40px;
+        padding: 5px;
+        border-radius: 10px;
         margin-right: 30px;
         position: fixed;
+        opacity: .8;
         right: 0;
     }
     .menu-btn:hover{/*need a better animation*/
@@ -196,6 +202,7 @@ footer img{
         background: rgba(0, 0, 0, 0.644);
         top: -500px;
         transition: ease-out .5s;
+        padding: 0;
     }
     .navbar a{
         padding: 0;
@@ -213,6 +220,7 @@ footer img{
         background: rgba(0, 0, 0, 0.63);
         height: 0;
         transition: .5s;
+        margin: 0;
     }
 }
 
