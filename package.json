@@ -1,0 +1,23 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio Website",
+  "main": "main.js",
+  "dependencies": {
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vezeveer/my_portfolio_website.git"
+  },
+  "author": "Emmanuel Pitcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vezeveer/my_portfolio_website/issues"
+  },
+  "homepage": "https://github.com/Vezeveer/my_portfolio_website#readme"
+}

@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Emmanuel Pitcher</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <!--<link href="css/bootstrap.css" rel="stylesheet">
-    <script src="js/bootstrap.js"></script>-->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
@@ -47,26 +49,29 @@
         maybe a pic ofyourself.-->
 
         <!--PORTFOLIO SECTION-->
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio" class="container portfolio">
+            <br>
             <h2>PORTFOLIO</h2>
-            <div class="portfolio-container">
-                <div class="site1 site">
-                    <div>
-                        <img src="./imgs/elconsos.gif" alt="elconsos img here">
+            <div class="portfolio-container container">
+                <br>
+                <div class="col site1 site row container">
+                    <div class="col portfolio-img-container">
+                        <img class="site-img" src="./imgs/elconsos.gif" alt="elconsos img here">
                     </div>
-                    <div class="site-info">
-                        <h3>El Consos Restaurant</h3>
+                    <div class="col site-info">
+                        <h5>El Consos Restaurant</h5>
                         <p>Built with only HTML CSS and JavaScript</p>
                         <a href="https://github.com/Vezeveer/restuarant_elco" target="_blank"><img width="24px" src="imgs/github-brands.svg"></a>
                         <a href="https://gogo.epizy.com" target="_blank"><img width="24px" src="imgs/globe-solid.svg"></a>
                     </div>
                 </div>
-                <div class="site2 site">
-                    <div>
-                        <img src="./imgs/blank_project.png" alt="blank project img here">
+                <br>
+                <div class="col site2 site row">
+                    <div class="col portfolio-img-container">
+                        <img class="site-img" src="./imgs/blank_project.png" alt="blank project img here">
                     </div>
-                    <div class="site-info">
-                        <h3>Place Holder</h3>
+                    <div class="col site-info">
+                        <h5>Place Holder</h5>
                         <p>Built with --</p>
                         <!--
                         <a href="#"><img width="24px" src="imgs/github-brands.svg"></a>
@@ -94,10 +99,10 @@
                 <br>
                     <a class="resume" href="Resume Final.pdf">My Resume &#8595;</a>
                 <div>
-                    <br>
+                    <p>
                     Lets build something<br>
                     Lets work together<br>
-                    <br>
+                    </p>
                     
                 </div>
                 <div id="social">
