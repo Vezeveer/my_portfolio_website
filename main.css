@@ -124,12 +124,18 @@ main{
 
 
 /*PORTFOLIO STARTS HERE*/
-.site1{
+.portfolio-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.site{
     display: flex;
     justify-content: center;
 }
-.site1-info{
+.site-info{
     margin-left: 20px;
+    width: 100%;
 }
 .portfolio h2{
     text-align: center;
@@ -147,4 +153,48 @@ footer img{
 .footer-inner{
     background-image: linear-gradient(225deg, #ff7b003d 0%, #2a0a5983 100%);
     
+}
+
+.menu-btn{
+    display: none;
+}
+
+@media only screen and (max-width: 720px){
+    .menu-btn{
+        display: block;
+        margin: 20px;
+        position: fixed;
+        right: 0;
+    }
+    .menu-btn:hover{/*need a better animation*/
+        background: rgba(0, 0, 0, 0.452);
+    }
+    .navbar{
+        /*display: none;*/
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.644);
+        top: -500px;
+        transition: ease-out .5s;
+    }
+    .navbar a{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        line-height: 90px;
+        transition: .5s;
+    }
+    .navbar a:hover{
+        background: #7effa7b9;
+        transition-delay: .07s;
+    }
+    .nav-cnt{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.63);
+        height: 0;
+        transition: .5s;
+    }
 }

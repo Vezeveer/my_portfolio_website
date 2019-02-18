@@ -12,13 +12,15 @@
 </head>
 <body>
     <main>
-        <header class="d-header">
+        <header id="home-dsk" class="d-header">
             <div class="nav-cnt">
+                <img class="menu-btn" width="30px" src="./imgs/bars-solid.svg">
                 <nav class="navbar">
-                    <a href="#home-dsk">HOME</a>
+                    <a></a>
+                    <a class="active" href="#home-dsk">HOME</a>
                     <a href="#portfolio">PORTFOLIO</a>
-                    <a>ABOUT</a>
-                    <a>CONTACT</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#contact">CONTACT</a>
                 </nav>
             </div>
             <img class="gradient" src="gradient-sunny.svg">
@@ -45,20 +47,32 @@
         maybe a pic ofyourself.-->
 
         <!--PORTFOLIO SECTION-->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <h2>PORTFOLIO</h2>
             <div class="portfolio-container">
-                <div class="site1">
+                <div class="site1 site">
                     <div>
                         <img src="./imgs/elconsos.gif" alt="elconsos img here">
                     </div>
-                    <div class="site1-info">
+                    <div class="site-info">
                         <h3>El Consos Restaurant</h3>
                         <p>Built with only HTML CSS and JavaScript</p>
                         <a href="https://github.com/Vezeveer/restuarant_elco" target="_blank"><img width="24px" src="imgs/github-brands.svg"></a>
                         <a href="https://gogo.epizy.com" target="_blank"><img width="24px" src="imgs/globe-solid.svg"></a>
                     </div>
                 </div>
+                <div class="site2 site">
+                    <div>
+                        <img src="./imgs/blank_project.png" alt="blank project img here">
+                    </div>
+                    <div class="site-info">
+                        <h3>Place Holder</h3>
+                        <p>Built with </p>
+                        <a href="#"><img width="24px" src="imgs/github-brands.svg"></a>
+                        <a href="#" ><img width="24px" src="imgs/globe-solid.svg"></a>
+                    </div>
+                </div>
+                <br>
             </div>
         </section>
 
@@ -67,30 +81,30 @@
         <!--CONTACT SECTION
             Implement message me form that works in contacts-->
 
-        <section class="contact-dsk">
+        <section id="about" class="contact-dsk">
             <form>
-                
+
             </form>
         </section>
 
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="footer-inner">
                 <br>
                 <div>
                     <br>
                     Lets build something<br>
                     Lets work together<br>
-                    <button>Email me</button>
+                    <br>
+                    
                 </div>
-                <br>
                 <div id="social">
                     <a href="https://github.com/Vezeveer" target="_blank"><img width="24px" src="imgs/github-brands.svg"></a> 
                     <!--<a href="#" target="_blank"><img width="24px" src="imgs/codewars-logo.png"></a>  -->
                     <a href="https://stackoverflow.com/users/story/11000146" target="_blank"><img width="24px" src="imgs/stack-overflow-brands.svg"></a>
                 </div>  
-                <br>
-                <p>mortalmanny@live.com<br>
-                    &copy; 2019 Emmanuel Pitcher</p><br>
+                
+                <p>
+                    &copy; 2019 Emmanuel Pitcher | mortalmanny@live.com</p><br>
             </div>
         </footer>
     </main>
