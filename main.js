@@ -5,14 +5,19 @@ let navbar =  document.querySelector('.navbar');
 let navlinks =  document.querySelectorAll('.navbar a');
 let navfiller = document.querySelector('.nav-cnt')
 
+let isClicking;
 function toggleMenu(){
-    if(navbar.style.top == '80px'){
-        navbar.style.top = '-500px';
-        navfiller.style.height = '0';
-    }else{
-        navbar.style.top = '80px';
-        navfiller.style.height = '80px';
-    }
+    window.clearTimeout(isClicking);
+
+    isClicking = setTimeout(() => {
+        if(navbar.style.top == '80px'){
+            navbar.style.top = '-500px';
+            navfiller.style.height = '0';
+        }else{
+            navbar.style.top = '80px';
+            navfiller.style.height = '80px';
+        }
+    }, 100);
 }
 
 menu_btn.addEventListener('click', toggleMenu);

@@ -24,6 +24,7 @@ main{
     position: absolute;
     z-index: 6;
     text-align: center;
+    height: 80px;
 }
 .navbar{
     margin-right: 30px;
@@ -54,19 +55,24 @@ main{
     width: 100%;
     height: 100%;
 }
-.logo-position{
+/*.logo-position{
     width: 100%;
     height: 100vh;
     position: relative;
     display: grid;
     place-items: center;
-}
+}*/
+
 .ep-logo{
     width: 300px;
 }
+.logo-position{
+    width: 100%;
+    height: 100vh;
+    z-index:11;
+}
 .logo-container{
     width: 300px;
-    position: absolute;
     z-index: 3;
 }
 
@@ -223,6 +229,7 @@ footer img{
         margin: 0;
     }
 }
+
 
 @media only screen and (max-width: 555px){
     .site, .portfolio-img-container, .portfolio{
