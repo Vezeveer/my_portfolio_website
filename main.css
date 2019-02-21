@@ -184,32 +184,15 @@ main{
 }
 
 
-
-
-
-
-
 /*PORTFOLIO STARTS HERE*/
-.portfolio-container{
-    width: 100%;
-    max-width: 900px;
-    color: rgb(70, 70, 70);
-}
-.portfolio-img-container{
-    width: 50%;
-    text-align: right;
-}
-.site-img{
-    width: 100%;
-    max-width: 200px;
-}
-.site-info{
-    width: 50%;
-}
-.portfolio h2{
+#portfolio{
     text-align: center;
-    color: #707070
+    line-height: 100px;
 }
+.portfolio{
+    
+}
+
 
 
 /*FOOTER STARTS HERE*/
@@ -238,15 +221,6 @@ footer img{
     }
     .menu-container{
         display: block;
-    }
-
-}
-
-
-@media only screen and (max-width: 555px){
-    .site, .portfolio-img-container, .portfolio{
-        margin: 0;
-        padding: 0;
     }
 
 }
