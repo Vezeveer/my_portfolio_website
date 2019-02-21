@@ -12,35 +12,98 @@ main{
 
 
 
-.d-header{
+.header-container{
     background: #bf8edf;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-.nav-cnt{
-    width: 100vw;
-    position: absolute;
-    z-index: 6;
-    text-align: center;
-    height: 80px;
-}
 .navbar{
-    margin-right: 30px;
     float: right;
-    opacity: 1;
+    margin-right: 20px;
 }
-.navbar a{
-    position: relative;
-    padding: 20px;
+.navbar a {
     text-decoration: none;
-    color: #f5c69b;
+    color: rgba(255, 255, 255, 0.705);
+    padding: 20px;
 }
 .navbar a:hover{
     color: white;
-    transition: .3s;
 }
+.nav-container{
+    width: 100vw;
+    position: absolute;
+    z-index: 6;
+    text-align: right;
+    height: 80px;
+}
+.mobile-menu{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+.mobile-menu li{
+    width: 100vw;
+    list-style: none;
+}
+.lnk li{
+    color: white;
+    width:100%;
+    margin: 0 auto;
+    line-height: 80px;
+}
+.lnk{
+    text-decoration: none;
+    text-align: center;
+}
+.lnk li:hover{
+    background: #7EFFA7;
+    transition: .5s;
+}
+.burger-btn{
+    z-index: 5;
+}
+.menu-container{
+    position: fixed;
+    top: -325px;
+    display: none;
+    transition: .5s;
+}
+/*Menu animation starts here*/
+.menu-bars-container{
+    display: inline-block;
+    cursor: pointer;
+    width: 80px;
+    padding: 20px;
+    transition: .5s;
+    float: left;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(231, 231, 231);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.change-menu{
+    top: 0;
+}
+.change-menu{
+    background: rgba(0, 0, 0, 0.479);
+}
+
+
+  /*End of Menu animation*/
 
 .left-part, .right-part{
     position: absolute;
@@ -55,13 +118,6 @@ main{
     width: 100%;
     height: 100%;
 }
-/*.logo-position{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: grid;
-    place-items: center;
-}*/
 
 .ep-logo{
     width: 300px;
@@ -139,9 +195,6 @@ main{
     max-width: 900px;
     color: rgb(70, 70, 70);
 }
-.site{
-    
-}
 .portfolio-img-container{
     width: 50%;
     text-align: right;
@@ -157,6 +210,7 @@ main{
     text-align: center;
     color: #707070
 }
+
 
 /*FOOTER STARTS HERE*/
 
@@ -177,57 +231,15 @@ footer img{
     color: white;
 }
 
-.menu-btn{
-    display: none;
-}
 
 @media only screen and (max-width: 720px){
-    .menu-btn{
-        display: block;
-        margin: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 40px;
-        padding: 5px;
-        border-radius: 10px;
-        margin-right: 30px;
-        position: fixed;
-        opacity: .8;
-        right: 0;
-    }
-    .menu-btn:hover{/*need a better animation*/
-        background: rgba(0, 0, 0, 0.452);
-    }
     .navbar{
-        /*display: none;*/
-        position: fixed;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.644);
-        top: -500px;
-        transition: ease-out .5s;
-        padding: 0;
+        display: none;
     }
-    .navbar a{
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        line-height: 90px;
-        transition: .5s;
+    .menu-container{
+        display: block;
     }
-    .navbar a:hover{
-        background: #7effa7b9;
-        transition-delay: .07s;
-    }
-    .nav-cnt{
-        position: fixed;
-        background: rgba(0, 0, 0, 0.63);
-        height: 0;
-        transition: .5s;
-        margin: 0;
-    }
+
 }
 
 

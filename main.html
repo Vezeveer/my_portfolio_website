@@ -15,9 +15,9 @@
 
 <body>
     <main>
-        <header id="home-dsk" class="d-header">
-            <div class="nav-cnt">
-                <img class="menu-btn" width="30px" src="./imgs/bars-solid.svg">
+        <header id="home-dsk" class="header-container">
+            <div class="nav-container">
+
                 <nav class="navbar">
                     <a></a>
                     <a class="active" href="#home-dsk">HOME</a>
@@ -25,6 +25,29 @@
                     <a href="#about">ABOUT</a>
                     <a href="#contact">CONTACT</a>
                 </nav>
+                <div id="menu-container" class="menu-container">
+                    <ul class="mobile-menu">
+                        <a class="lnk current" href="#">
+                            <li>HOME</li>
+                        </a>
+                        <a class="lnk" href="#portfolio">
+                            <li>PORTFOLIO</li>
+                        </a>
+                        <a class="lnk" href="#about">
+                            <li>ABOUT</li>
+                        </a>
+                        <a class="lnk" href="#contact">
+                            <li>CONTACT</li>
+                        </a>
+                    </ul>
+                    <a class="burger-btn">
+                        <div class="menu-bars-container" onclick="toggleMenu()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <img class="gradient" src="gradient-sunny.svg">
             <img class="left-part" src="left-part.jpg">
@@ -64,12 +87,12 @@
                     <div class="col portfolio-img-container">
                         <img class="site-img" src="./imgs/elconsos.gif" alt="elconsos img here">
                     </div>
-                    <div class="col site-info">
+                    <div class="site-info">
                         <h5>El Consos Restaurant</h5>
                         <p>Built with only HTML CSS and JavaScript</p>
-                        <a href="https://github.com/Vezeveer/restuarant_elco" target="_blank"><img width="24px"
-                                src="imgs/github-brands.svg"></a>
-                        <a href="https://gogo.epizy.com" target="_blank"><img width="24px"
+                        <a href="https://github.com/Vezeveer/restuarant_elco" target="_blank"><img class="fill-svg"
+                                width="24px" src="imgs/github-brands.svg"></a>
+                        <a href="https://gogo.epizy.com" target="_blank"><img class="fill-svg" width="24px"
                                 src="imgs/globe-solid.svg"></a>
                     </div>
                 </div>
@@ -78,12 +101,12 @@
                     <div class="col portfolio-img-container">
                         <img class="site-img" src="./imgs/old_site.png" alt="blank project img here">
                     </div>
-                    <div class="col site-info">
+                    <div class="site-info">
                         <h5>My first webpage</h5>
                         <p>Built with HTML CSS JavaScript</p>
-                        <a href="https://github.com/Vezeveer/My_first_webpage"><img width="24px"
+                        <a href="https://github.com/Vezeveer/My_first_webpage"><img class="fill-svg" width="24px"
                                 src="imgs/github-brands.svg"></a>
-                        <a href="http://vezeveer.epizy.com/im_a_developer2/main.html"><img width="24px"
+                        <a href="http://vezeveer.epizy.com/im_a_developer2/main.html"><img class="fill-svg" width="24px"
                                 src="imgs/globe-solid.svg"></a>
                     </div>
                 </div>
@@ -92,7 +115,7 @@
                     <div class="col portfolio-img-container">
                         <img class="site-img" src="./imgs/blank_project.png" alt="blank project img here">
                     </div>
-                    <div class="col site-info">
+                    <div class="site-info">
                         <h5>-</h5>
                         <p>Built with --</p>
                         <!--
@@ -123,11 +146,11 @@
 
                 </div>
                 <div id="social">
-                    <a href="https://github.com/Vezeveer" target="_blank"><img width="24px"
+                    <a href="https://github.com/Vezeveer" target="_blank"><img class="fill-svg" width="24px"
                             src="imgs/github-brands.svg"></a>
                     <!--<a href="#" target="_blank"><img width="24px" src="imgs/codewars-logo.png"></a>  -->
-                    <a href="https://stackoverflow.com/users/story/11000146" target="_blank"><img width="24px"
-                            src="imgs/stack-overflow-brands.svg"></a>
+                    <a href="https://stackoverflow.com/users/story/11000146" target="_blank"><img class="fill-svg"
+                            width="24px" src="imgs/stack-overflow-brands.svg"></a>
                 </div>
                 <br>
                 <p>
